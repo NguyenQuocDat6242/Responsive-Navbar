@@ -35,6 +35,7 @@
 			font-size: 18px;
 			color: #fff;
 			display: none;
+			cursor: pointer;
 		}
 		ul.list-item-mobile {
 			list-style: none;
@@ -69,6 +70,14 @@
 			height: 100%;
 			transform: translateX(-250px);
 		}
+		.den {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #00000059;
+			display: none;
+		}
 		@media screen and (max-width: 900px) {
 			ul.list-item-pc{
 				display: none;
@@ -90,9 +99,9 @@
 			<li class="item-pc"><a href="" class="name-item-pc">Logout</a></li>
 			<li class="item-pc"><a href="" class="name-item-pc">Switch</a></li>
 		</ul>
-		<div class="bars"><i class="fas fa-bars"></i></div>
+		<label class="bars" for="check-mobile"><i class="fas fa-bars"></i></label>
 		<input type="checkbox" class="check-mobile" id="check-mobile">
-		<div class="den"></div>
+		<label class="den" for="check-mobile"></label>
 		<ul class="list-item-mobile">
 			<li class="item-mobile cancel"><a href="" class="name-item-mobile"><i class="fas fa-times"></i></a></li>
 			<li class="item-mobile"><a href="" class="name-item-mobile">Home</a></li>
