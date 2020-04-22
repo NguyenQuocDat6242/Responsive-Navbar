@@ -77,6 +77,14 @@
 			height: 100%;
 			background-color: #00000059;
 			display: none;
+			cursor: pointer;
+		}
+		.check-mobile:checked ~ .list-item-mobile{
+			transform: translateX(0);
+			transition: 1s;
+		}
+		.check-mobile:checked ~ .den{
+			display: block;
 		}
 		@media screen and (max-width: 900px) {
 			ul.list-item-pc{
@@ -100,7 +108,7 @@
 			<li class="item-pc"><a href="" class="name-item-pc">Switch</a></li>
 		</ul>
 		<label class="bars" for="check-mobile"><i class="fas fa-bars"></i></label>
-		<input type="checkbox" class="check-mobile" id="check-mobile">
+		<input type="checkbox" hidden class="check-mobile" id="check-mobile">
 		<label class="den" for="check-mobile"></label>
 		<ul class="list-item-mobile">
 			<li class="item-mobile cancel"><a href="" class="name-item-mobile"><i class="fas fa-times"></i></a></li>
