@@ -36,6 +36,39 @@
 			color: #fff;
 			display: none;
 		}
+		ul.list-item-mobile {
+			list-style: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding-inline-start: 0;
+			width: 250px;
+			background-color: brown;
+			height: 100%;
+		}
+		li.item-mobile {
+			text-align: center;
+			padding: 10px;
+		}
+		a.name-item-mobile {
+			font-size: 18px;
+			color: #fff;
+			text-decoration: none;
+		}
+		li.item-mobile.cancel {
+			text-align: end;
+		} 
+		ul.list-item-mobile {
+			list-style: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding-inline-start: 0;
+			width: 250px;
+			background-color: brown;
+			height: 100%;
+			transform: translateX(-250px);
+		}
 		@media screen and (max-width: 900px) {
 			ul.list-item-pc{
 				display: none;
@@ -60,6 +93,15 @@
 		<div class="bars"><i class="fas fa-bars"></i></div>
 		<input type="checkbox" class="check-mobile" id="check-mobile">
 		<div class="den"></div>
+		<ul class="list-item-mobile">
+			<li class="item-mobile cancel"><a href="" class="name-item-mobile"><i class="fas fa-times"></i></a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Home</a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Account</a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Logout</a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Switch</a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Logout</a></li>
+			<li class="item-mobile"><a href="" class="name-item-mobile">Switch</a></li>
+		</ul>
 	</div>
 </body>
 </html>
